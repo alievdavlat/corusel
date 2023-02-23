@@ -1,0 +1,113 @@
+/* core style  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700;800;900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto Slab', serif;
+  background: #3e4866;
+  /* padding: 300px; */
+  /* width: 100vw; */
+}
+
+.container{
+  max-width: 1500px !important;
+  width: 100%;
+  margin: 100px auto;
+  /* border: 1px solid gray; */
+  position: relative;
+}
+a{
+  text-decoration: none;
+}
+
+/* slider style  */
+.slider-inner{
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:#1c243c;
+  border-radius: 15px;
+  /* display: none !important; */
+}
+.slider-inner div :nth-child(1){
+  width: 1000px;
+  height: 500px;
+  text-align: center;
+  margin: auto;
+  box-sizing: border-box;
+}
+.slider-inner img{
+  width: 100%;
+  text-align: center;
+  height: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position:top;
+
+}
+.slider-text{
+  width: 80%;
+  margin:30px auto;
+  text-align: center;
+  color: aliceblue !important;
+  font-weight: 600;
+  font-family: monospace;
+  line-height: 150%;
+  font-size: 17px;
+
+}
+.prev,
+.next{
+  color: aliceblue;
+  font-size: 24px;
+  width: 100px !important;
+  height: 100px;
+  position: absolute;
+  z-index: 999;
+
+}
+.next{
+  right:100px;
+  top: 48%;
+}
+.prev{
+  top: 48%;
+  left: 180px;
+}
+.corusel-indicotors{
+  position: relative;
+  right: 0;
+  bottom: 30px;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  /* margin-right: 15%;
+  margin-left: 15%; */
+  list-style: none;
+  margin: 0 auto;  
+}
+.corusel-dot{
+  box-sizing: border-box;
+  flex: 0 1 auto;
+  width: 10px;
+  height: 10px;
+  margin-right: 3px;
+  margin-left: 3px;
+  cursor: pointer;
+  background-color: white;
+  background-clip: padding-box;
+  border-bottom:  1px solid transparent;
+  opacity: .5;
+  transition: opacity .6s ease;
+  border-radius: 50%;
+  margin-right: 8px;
+}
